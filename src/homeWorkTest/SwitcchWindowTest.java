@@ -13,7 +13,7 @@ public class SwitcchWindowTest {
 	public void windowTest() throws InterruptedException {
 		driver.getDriver().get(TestDataReader.getProperty("guruUrl"));
 		driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); 
-		
+		driver.getDriver().manage().window().maximize();
 		// Get the title and store it in a variable.
 		String titlePage = driver.getDriver().getTitle(); 
 		
